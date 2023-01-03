@@ -1,0 +1,64 @@
+.radio {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    @apply my-[10px] mx-0;
+}
+
+.radio input:not(:checked),
+.radio input:checked {
+    @apply pointer-events-none left-0 overflow-hidden w-0 h-0 z-[-1] m-0 absolute opacity-0;
+}
+
+.radio input ~ label {
+    @apply pl-7 text-sm h-[20px] cursor-pointer relative inline-block;
+}
+
+.radio input ~ label:before,
+.radio input ~ label:after {
+    content: '';
+    @apply rounded-full border-2 border-transparent left-0 w-[20px] h-[20px] absolute;
+}
+
+.radio input ~ label:before {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: all .2s ease-in;
+}
+
+.radio input:not(:checked) ~ label:before {
+    transform: scale(0);
+    @apply transform scale-0;
+}
+
+.radio input:not(:checked) ~ label:after {
+    @apply border-2 border-gray-300;
+}
+
+.radio input:checked ~ label:before {
+    @apply transform scale-[0.5] bg-theme border-2 border-theme
+}
+
+.radio input:checked ~ label:after {
+    @apply border-2 border-theme;
+}
+
+.radio input:disabled ~ label {
+    @apply pointer-events-none text-gray-400;
+
+}
+
+.radio input:disabled:not(:checked) ~ label:after {
+    @apply border-gray-300;
+}
+
+.radio input:disabled:checked ~ label:before {
+    @apply border-gray-300 bg-gray-300;
+}
+
+.radio input:disabled:checked ~ label:after {
+    @apply border-gray-300;
+}

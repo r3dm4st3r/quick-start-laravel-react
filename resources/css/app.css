@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto+Slab:wght@400;600;700;800&display=swap');
+
+@import 'tailwindcss/base.css';
+@import 'tailwindcss/components.css';
+@import './components/index.css';
+@import 'tailwindcss/utilities.css';
+@import 'tailwindcss/screens.css';
+@import 'tailwindcss/variants.css';
+
+body,
+html {
+    @apply body;
+}
+
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.container-fluid {
+    --gutter-x: 1.5rem;
+    --gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--gutter-x) * 0.5);
+    padding-left: calc(var(--gutter-x) * 0.5);
+    margin-right: auto;
+    margin-left: auto;
+}

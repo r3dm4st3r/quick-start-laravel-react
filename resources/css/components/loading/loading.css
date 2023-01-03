@@ -1,0 +1,22 @@
+.loader {
+    @apply text-white text-5xl;
+}
+
+.loader:before {
+    content: "{";
+    display: inline-block;
+    animation: load 0.4s alternate infinite ease-in-out;
+}
+
+.loader:after {
+    content: "}";
+    display: inline-block;
+    animation: load 0.4s 0.3s alternate infinite ease-in-out;
+}
+
+@keyframes load {
+    to {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+}

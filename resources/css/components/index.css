@@ -1,0 +1,15 @@
+@import "./forms/input.css";
+@import "./forms/radio.css";
+@import "./button/button.css";
+@import "./loading/loading.css";
+
+
+@layer components {
+    .body {
+        @apply relative w-full bg-gray-50 dark:bg-dark-300 scroll-smooth leading-[1.4];
+    }
+
+    .text-shadow {
+        text-shadow: -2px 0 #786e62;
+    }
+}

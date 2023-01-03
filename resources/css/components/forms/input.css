@@ -1,0 +1,7 @@
+.form-control {
+    @apply bg-white w-full border-0 focus:border-theme focus:ring-0 focus:shadow-none;
+}
+
+.form-control.form-search {
+    @apply py-3 pl-4 pr-[90px] bg-black/20 border-2 border-black/10 text-white shadow drop-shadow-sm;
+}
