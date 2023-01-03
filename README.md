@@ -1,4 +1,5 @@
-# Laravel React Quick Starter
+<u><h1 align="center"> Laravel React Quick Starter</h1></u>
+
 
 <div align='center'>
 <table>
