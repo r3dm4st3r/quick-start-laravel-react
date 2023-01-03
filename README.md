@@ -56,6 +56,12 @@
 - [x] User Login
 - [x] User Register
 
+
+#### Preview
+
+![image](https://user-images.githubusercontent.com/101512784/210441650-76baf3ca-3ca5-431e-8801-926aa2ab211d.png)
+
+
 ##### This is a setup only, You'll need to implement yourself.
 
 with ❤️by [Prafulla Ranjan](https://prafullaranjan.com)
