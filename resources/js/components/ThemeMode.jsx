@@ -16,14 +16,14 @@ const ThemeMode = () => {
   };
 
   useEffect(() => {
-    if (media && isDarkMode) {
+    if (media || isDarkMode) {
       selector.classList.add('dark');
       selector.classList.remove('light');
     } else {
       selector.classList.add('light');
       selector.classList.remove('dark');
     }
-  }, [isDarkMode]);
+  }, [isDarkMode, media]);
 
   useUpdateEffect(() => {
     localStorage.setItem('darkMode', `${isDarkMode}`);
